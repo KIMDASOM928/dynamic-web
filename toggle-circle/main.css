@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    background: #4298b5;
+}
+
+.change-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin-top: 10vh;
+}
+
+.change-color {
+    background: gold;
+    border-radius: 999999px;
+}
+
+.btn-wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-change,
+.btn-clear {
+    padding: 10px 20px;
+    width: 49%;
+    text-transform: uppercase;
+    color: white;
+    background-color: #d20962;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
