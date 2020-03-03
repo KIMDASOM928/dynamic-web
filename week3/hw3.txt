@@ -1,0 +1,45 @@
+1-	AddEventListener()
+
+2-	Addition form
+
+We created "AddNums()" function. In the function, we created two "let" variables that represent the two numbers from the input tags in the HTML file. The goal is to link elements from our HTML code to our JS with the help from the "document.getElementById" method. Then we created an addition variable that essentially will perform the addition of the two numbers. After the function is defined, we add the button that would initiate the function to perform the division. To do so, we add an "EventListener" method that would add the two inputted numbers and return the result.
+
+3-	Referenced function and Invoked function
+
+4-	Name functions are declared inside of a statement
+function myFunction(a, b) {   return a * b; }
+  
+Function expressions are functions created within an expression
+let sum = function(a, b) {
+  return a + b;
+};
+
+
+
+5-	Arrow functions are functions with their own special syntax that accept a fixed number of arguments
+
+(param1, param2…) => {
+… 
+ }
+
+
+Named functions are function that has been defined with a variable
+
+Var Make = function make() { …
+}
+
+Anonymous functions are unnamed functions
+
+function  make() { …
+}
+
+6-	Toggle Circle
+
+
+7-	Window.location.reload() essentially clear the script and force the page to refresh
+
+
+8-	First, we need to navigate to the folder using cd command. Inside the folder, now we initialize Git with the command GIT INIT, then we add the files to the staging are with the command GIT ADD. Next we commit the files with the command GIT COMMIT. Finally, to make it official we need to push the code, which is done by the following command GIT PUSH
+
+
+9-	“. git” hidden file signals that Git has been initialized in the said folder. The rm -rf .git command remove the .git file
