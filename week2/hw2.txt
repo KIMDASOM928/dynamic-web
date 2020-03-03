@@ -1,0 +1,44 @@
+
+1-
+
+======= DIVISION FORM =======
+In this division form, we defined a function called "divideNums()". In the function, we created two "let" variables that represent the two numbers from the input tags in the HTML file. The goal is to link elements from our HTML code to our JS with the help from the "document.getElementById" method. Then we created a division variable that essentially set the scene for the operation to be performed. After the function is defined, we add the button that would initiate the function to perform the division. To do so, we add an "EventListener" method that would perform a division from the two inputted numbers and return the result.
+
+2- var, let, const, and variable naming
+
+"First,Number" ==> Failed
+"Fist_Number" ==> Passed
+"FirstNumber " ==> Failed
+
+3- let, const and var:
+
+* Reassigning the variable of the "var" variable was successful and the console.log printed the latest value assigned
+* Reassigning the variable of the "let" variable was successful and the console.log printed the latest value assigned
+*Reassigning the variable of the "const " variable was unsuccessful and the console.log printed the first value assigned ==> (Uncaught SyntaxError: Identifier 'watch' has already been declared at <anonymous>:1:1)
+
+4- 
+
+A variable has a global scope when it is called from outside of a function in the script. 
+
+ Var name = "Samuel";
+
+ func() {
+//paramaters
+}
+
+
+A variable has a local scope when it is called within a function 
+
+   func() {
+	var name = "Michael";
+
+}
+
+
+
+
+
+
+
+ 
+
