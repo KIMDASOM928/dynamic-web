@@ -1,0 +1,122 @@
+Part 1
+
+1-	Loops are great for executing statements for a desired number of times
+Two reasons why loops are great
+-	To reduce lines of code while executing commands
+-	Make it easy to rotate between numerous statements (for example: creating an image carousel)
+-	
+2-	The basic syntax for a for loop:
+For (initialization; condition; final expression) { //statement
+}
+
+The high-level syntax for a for loop:
+let i = 0;
+for (i++ < 1000) {
+    if (i > 1)
+        continue;
+    console.log(i);
+}
+
+3-	For loops are used when you know exactly the number of times the code will be executed
+
+4-	Example of for loop 
+
+for (i = 0; i < 10;  i++) {
+	Console.log('Number is: ${i}');
+}
+
+In this example, 
+Statement 1 sets a variable before the loop starts ( i = 0 ).
+Statement 2 defines the condition for the loop to run (I must be less than 10).
+Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+
+By running the code, the result shows that I can be any number between 0 to 9.
+
+
+5-	 the opening and closing curly braces { }
+
+
+6-	 It returns to the step2 which is the condition evaluation.
+	
+
+7-	Example of for loop with if statement and break statement
+
+for (let i = 0; i < 20; i++) { 
+    if (i > 10) {
+        console.log( i);
+    break;
+    }
+    console.log(i);
+}
+8-	Example of for loop statement that include an if statement and continue statement
+for (let i = 0; i < 10; i++) { 
+    if (i===5) { 
+        continue; 
+    } 
+    Console.log(i);
+}
+
+
+9-	Let brandArray = [“adidas”, “nike”, “puma”]
+
+10-	Let shoe = [{brand:”adidas”, model:”NMD”, size:”9”}]
+
+11-	Let brandArray = [“adidas”, “nike”, “puma”]
+
+for (i = 0; i < brandArray.length; i++) {
+    console.log(i)
+}
+
+
+12-
+const tea = {
+    type: "earlgrey",
+    color: "darkbrown",
+    taste: 3,
+    caffeine: 5,
+    radio: true
+};
+for(property in tea) { 
+    console.log(`${tea[property]}`);
+}
+console.log(`It is ${tea.radio} that my ${tea.type} is ${tea.color} and has ${tea.taste} taste and ${tea.caffeine} caffeine!`)
+
+I assigned value to the tea and when the code is excuated the result came out like this.
+"It is true that my earlgrey is darkbrown and has 3 taste and 5 caffeine!"
+
+
+
+13-
+
+var beers = ['guiness', 'heineken', 'budlight'];
+var x;
+
+for (x of beers) {
+  document.write(x + "<br >");
+}
+
+The for/of statement loops through the values of an iterable object.
+
+
+
+
+14-	 The main difference between the for in loop and for of loop is that the for in loop is used to iterate over the properties of an object and the for of loop is used to iterate over the values.
+
+15-	Example of do while loop 
+let result = "";
+let i = 0;
+
+do {
+    i += 1;
+    result += ` ${i}`;
+
+} while (i < 20);
+
+console.log(result);
+
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+In this example, we created an empty variable and an index. We then wrote a while loop statement that only run if i < 20. So that condition is always evaluated before the code is run. If the condition does not conform then the upper code will not execute.
+
+
+16-	A loop terminates because it hit a roadblock which is either a break or a continue 
