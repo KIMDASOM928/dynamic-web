@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link href="https://fonts.googleapis.com/css?family=Jost:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="Site">
+    <div class="Site-content">
+        <div class="note-taker">
+            <h1 class="title">Note App</h1>
+            <div class="storage-buttons">
+                <a class="clear">Clear Storage</a>
+                <a class="empty">Empty Storage</a>
+            </div>
+            <div id="storage-quota-msg"></div>
+            <div class="file-save-button">
+                <a id="save">Download Your Notes</a>
+            </div>
+            <div class="textarea-wrapper">
+                <textarea name="text" class="session-storage" id="textArea" cols="50" rows="10">Type your notes here...</textarea>
+                <button type="button" id="save-text">Save Text</button>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <script>
+            const theDate = new Date();
+            const footer = document.querySelector(".site-footer");
+            footer.style.fontWeight = "700";
+            footer.style.fontFamily = "Jost, sans-serif";
+            footer.innerHTML = `Kim Dasom © ${theDate.getFullYear()}`;
+        </script>
+    </footer>
+    <script src="session.js"></script>
+</body>
+
+</html>

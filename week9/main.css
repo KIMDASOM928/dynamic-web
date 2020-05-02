@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.Site {
+    font-family: 'jost', sans-serif;
+    background-color: #ff6c5f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.note-taker {
+    width: 90%;
+    margin: 1.5rem auto;
+    max-width: 800px;
+}
+
+.note-taker #textArea {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
+
+.clear,
+.empty,
+#save {
+    color: white;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.clear:hover {
+    color: #1970d4;
+}
+
+.empty:hover {
+    color: #1970d4;
+}
+
+#save:hover {
+    color: #1970d4;
+}
+
+.storage-buttons,
+#save,
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.storage-buttons {
+    margin-top: 2rem;
+    color: #1d3557;
+    cursor: pointer;
+}
+
+#save {
+    cursor: pointer;
+}
+
+.storage-buttons a:first-of-type,
+#save a:first-of-type,
+.title a:first-of-type {
+    margin-right: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea-wrapper #save-text {
+    font-family: 'jost', sans-serif;
+    font-weight: 400;
+    width: 6.5rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 3px;
+}
+
+textarea {
+    margin-top: 55px;
+    font-family: 'jost', sans-serif;
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.9rem;
+    color: #1d3557;
+    font-size: 1rem;
+}
+
+#save-text {
+    background: #ffffff;
+    color: #ff6c5f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+
+#save-text:hover {
+    background-color: #1970d4;
+    color: white;
+}
+
+.site-footer {
+    margin: 0 auto;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

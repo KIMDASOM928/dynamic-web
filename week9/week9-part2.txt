@@ -1,0 +1,86 @@
+
+1. What is the Web Storage API?
+The Web Storage API permits applications to store data within an individual user's browser.
+
+2. What data storage was used before HTML5 was introduced? What was the data storage called and what was it included in?
+Before HTML5 was introduced, application data was stored in cookies, included in each server request. 
+
+3. What are 3 advantages of using the Web Storage API over cookies?
+Web Storage is more secure, Web storage can store large amount of data and Web Storage can be store locally
+
+4. What are the two objects called for storing data on the client that HTML5 Web Storage provides?
+sessionStorage and localStorage
+
+5. Can localStorage and sessionStorage be read server-side?
+No, it can only be read client-side
+
+6. Which data item can be read server-side? Why is it popular? What is it used mostly for? And what kind of data might it contain?
+Cookies can be read server-side. It's popular because they allow sites to store user data directly into the user's web browser. Cookies are mostly used to identify a user's session, allowing a web server to recognize the user as they navigate through the site and may contain sensitive data.
+
+7. Why do cookies have to be well secured and protected?
+Cookies have to be well secured and protected because it may contain sensitive data.
+
+8. What is the httpOnly flag good for? And what does it help mitigate the negative impact of, for example?
+The httpOnly flag is good for blocking the access of a cookie from the client-side and therefore the JavaScript code. 
+It helps mitigate the negative impact of the XSS attack, which is a Cross Site Scripting attack. 
+
+9. What are localStorage and sessionStorage of the Web Storage API connected to? And what does that connection make possible for pages from the same origin to do?
+localStorage and sessionStorage of the Web Storage API are connected to a particular origin, domain and protocol.
+This connection makes is possible for all pages from one origin to store and access the same data.
+
+10. What does the Storage Interface of the Web Storage API permit?
+The Storage Interface of the Web Storage API permits the ability to set, retrieve, and remove data for a specific domain and storage type (local or session.
+
+11. The Storage Object, represented by the localStorage and sessionStorage objects, contains one property. What is that property called and what does it return? Use your project application to describe what this property does.
+The Storage Object, represented by the localStorage and sessionStorage objects contains storage.length, the length property which returns an integer representing the number of data items stored in the Storage object.
+Project application example:
+
+12. Give me the five Storage methods of the Web Storage API and describe what each does. When applicable, use code from your project application as examples.
+Method 1: Storage.key() - when this is passed a certain number represented by n, this method returns the name of the nth key in the storage. The order of keys is user-agent defined, so it's not reliable.
+
+Method 2: Storage.getItem() - when this method is passed a key name, it will return that key's value, or null if the key does not exist.
+
+Method 3: Storage.setItem() - when passed a key name and value, it will add that key to the storage, or update that key's value if it already exists
+
+Method 4: Storage.removeItem() - when passed a key name, it will remove that key from the storage. If there is no item associated with the given key, this method will do nothing.
+
+Method 5: Storage.clear() - when invoked, will empty all keys out of the storage. 
+
+13. When using cookies, why would you want to use the Secure flag?
+You want to use the httpOnly secure flag because it prevents client-side access to that cookie. 
+
+14. What is the difference between localStorage and sessionStorage?
+localStorage: 
+Maintains storage within: the Applications tab in Chrome Developer Tools, the Inspector tab and then the Storage tab within Firefox Web Developer Tools, and the Storage tab within the JavaScript Console in Safari, for example.
+The data is available for the duration of a page session, as long as the browser window or tab is open. This includes page reloads and restores.
+Stores data only for a session. The data is stored until the browser window or browser tab is closed.
+The data is never transferred to the server.
+The storage limit is larger than for a cookie, max 5MB.
+
+sessionStorage:
+data is never transferred to the server.
+data is stored with no expiration date by default, and can only be cleared using JavaScript, clearing the Browser cache, or localStorage itself located in the Browser Console.
+Storage limit is the maximum compared to sessionStorage and cookies (10MB).
+
+15. What are the similarities between localStorage and sessionStorage?
+The two Web Storage objects both allow for the saving of key/value pairs in the browser
+Data is never transferred to the server
+
+16. Explain what try...catch is and what it does.
+The try...catch statement handles some or all of the errors that may occur in a block of code, while still running code.
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+17. Why do we have to set a try...catch statement in our application? Refer to your/this homework README.md for the answer.
+We have to set a try...catch statement in our application in order to catch our exception. We set and get our sessionStorage and also check if we have exceeded our sessionStorage quota.
+
+18. Explain what JSON.stringify() does and provide an example using code from your project application.
+JSON.stringify() method converts a JavaScript object or value to a JSON string. We need to take the sessionStorage object's autosave property's value and extract it from sessionStorage and transfer the value into a string so that we may insert it into a .txt file. 
+
+19. Describe what the value of the csv variable is and why it is important for our application.
+The value of the css variable is 
+This is important for our application so that we may insert the value, which is transferred into a string, into a .txt file for the user to download
+
+
+20. Please copy and paste the result of the console.log(csv) after you have clicked on the Save Text To File For Download button. Hint: you should try this out only after you have completed building your application.
+
